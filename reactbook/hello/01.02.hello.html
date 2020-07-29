@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello React</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <!-- определение места, где должно находиться ваше приложение на странице -->
+  <div id="app1">
+    <!-- my app renders here -->
+    <!-- здесь будет отображено мое приложение "app1"-->
+  </div>
+  <div id="app2">
+    <!-- my app renders here -->
+    <!-- здесь будет отображено мое приложение "app2"-->
+  </div>
+  <div id="app3">
+    <!-- my app renders here -->
+    <!-- здесь будет отображено мое приложение "app2"-->
+  </div>
+    <script src="react/build/react.js"></script>
+    <script src="react/build/react-dom.js"></script>
+    <script>
+      ReactDOM.render(
+        React.DOM.h1(
+          {
+            id: "my-heading",
+          },
+          "Hello world!"
+        ),
+        document.getElementById('app1')
+      );
+      ReactDOM.render(
+              //React.DOM.h1(null,  "Hello pretty me!"),
+              // Пример работоспособного кода c CSS (атрибута style)
+              React.DOM.h1(
+                      {
+                        style: {
+                          background: "black",
+                          color: "white",
+                          fontFamily: "Verdana",//не font-family
+                        }
+                      },
+                      "Hello CSS!"
+              ),
+
+      document.getElementById("app2")
+      );
+      var Component = React.createClass({
+        render: function() {
+          return React.DOM.span(null, "I'm so custom");
+        }
+      });
+      ReactDOM.render(
+              React.createElement(Component),
+              document.getElementById("app3")
+      );
+
+    </script>
+  </body>
+</html>

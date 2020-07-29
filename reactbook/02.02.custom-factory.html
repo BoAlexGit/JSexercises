@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom component</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="app1">
+       <!-- my app renders here -->
+    </div>
+    <div id="app2">
+      <!-- my app renders here -->
+    </div>
+    <script src="react/build/react.js"></script>
+    <script src="react/build/react-dom.js"></script>
+    <script>
+      var Component = React.createClass({
+        render: function() {
+          return React.DOM.span(null, "I'm so custom" +
+                  " ComponentFactory");
+        }
+      });
+
+      var ComponentFactory = React.createFactory(Component);
+
+      ReactDOM.render(
+        ComponentFactory(),
+        document.getElementById("app1")
+      );
+      ReactDOM.render(
+              React.createElement("span", null, "методы семейства React.DOM.* являются ",
+              "всего лишь удобными оболочками вокруг React.createElement()", null),
+              document.getElementById("app2")
+      );
+
+    </script>
+  </body>
+</html>

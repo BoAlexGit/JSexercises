@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb521ec7-7e4e-40fa-8417-5cecbc1858ee" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="reactbook" />
+  </component>
+  <component name="GOROOT" path="/snap/go/4901" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1WNmT2kbijahqiYQNZ7b2e5sPDJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.npm" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="$USER_HOME$/.npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="148" y="160" width="800" height="677" key="#GOROOT" timestamp="1578998459204">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="148" y="160" width="800" height="677" key="#GOROOT/67.27.1853.930@67.27.1853.930" timestamp="1578998459204" />
+    <state x="227" y="188" width="642" height="620" key="#test" timestamp="1578999516729">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="227" y="188" width="642" height="620" key="#test/67.27.1853.930@67.27.1853.930" timestamp="1578999516729" />
+    <state x="331" y="241" width="424" height="513" key="FileChooserDialogImpl" timestamp="1578999511475">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="331" y="241" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.930@67.27.1853.930" timestamp="1578999511475" />
+    <state x="304" y="180" width="488" height="637" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578998692497">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="304" y="180" width="488" height="637" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.930@67.27.1853.930" timestamp="1578998692497" />
+  </component>
+</project>
