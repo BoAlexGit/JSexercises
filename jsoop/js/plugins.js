@@ -23,3 +23,4 @@
 
 // Place any jQuery/helper plugins in here.
 // Изменения user2 для изучения Git
+// Ещё раз изменения делает user2
