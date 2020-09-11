@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 
 let money = +prompt ("Ваш бюджет на месяц?", ""),
@@ -28,7 +28,7 @@ for (let i = 0; i < 2; i++) {
         i--;
     }
 
-};
+}
 
 
 
@@ -91,3 +91,7 @@ if (appData.moneyPerDay < 100) {
 } else {
     console.log ("Произошла ошибка");
 }
+let a;
+a = a || [];
+
+console.log (appData, a);

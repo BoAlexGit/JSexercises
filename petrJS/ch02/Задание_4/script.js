@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 
 let money, time;
@@ -6,8 +6,8 @@ let money, time;
 function start() {
     money = +prompt ("Ваш бюджет на месяц?", "");
     time = prompt ("Введите дату в формате YYYY-MM-DD", "");
-
-    while (isNaN(money) || money == "" || money == null) {
+// проверка money на не цифры,   пустая,      отмену нажал
+    while (isNaN   (money) || money == "" || money == null) {
         money = +prompt ("Ваш бюджет на месяц?", ""); 
     }
 
@@ -41,8 +41,8 @@ function chooseExpenses() {
 chooseExpenses();
 
 
-function detectDayBudget() {                                            // Расчет дневного бюджета
-    appData.moneyPerDay = (appData.budget / 30).toFixed();
+function detectDayBudget() {                                            // Функция Расчета дневного бюджета
+    appData.moneyPerDay = (appData.budget / 30).toFixed(2);// Округление до знака значения в скобках
     alert ("Бюджет на 1 день составляет " + appData.moneyPerDay + "руб.");
 }
 detectDayBudget();
