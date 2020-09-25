@@ -89,6 +89,15 @@ let appData = {
 
 };
 
+appData.chooseExpenses();
+appData.detectDayBudget();
+appData.detectLevel();
+appData.checkSavings();
+appData.chooseOptExpenses();
+appData.chooseIncome();
+
+
+
 for (let key in appData) {
     window.console.log("Наша программа включает в себя данные: " + key + " - " + appData[key]);
 }
