@@ -88,7 +88,7 @@ let appData = {
 
 
 };
-
+// Для того чтобы функции работали (Птр этого не сделал, он вызывал каждую отдельно в консоли)
 appData.chooseExpenses();
 appData.detectDayBudget();
 appData.detectLevel();
@@ -101,3 +101,31 @@ appData.chooseIncome();
 for (let key in appData) {
     window.console.log("Наша программа включает в себя данные: " + key + " - " + appData[key]);
 }
+
+/******* Конструкторы и классы ******************************************/
+function User(name) {
+    this.name = name;
+    this.isAdmin = false;
+}
+
+let user = new User("Вася");
+
+alert(user.name); // Вася
+alert(user.isAdmin); // false
+
+/******* Классы ******************************************/
+class User {
+
+    constructor(name) {
+        this.name = name;
+    }
+
+    sayHi() {
+        alert(this.name);
+    }
+
+}
+
+// Использование:
+let user = new User("Иван");
+user.sayHi();
