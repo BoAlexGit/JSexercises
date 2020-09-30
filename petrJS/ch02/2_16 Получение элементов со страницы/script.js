@@ -2,8 +2,8 @@
 let box = document.getElementById('box'),
 	btn = document.getElementsByTagName('button'),
 	circle = document.getElementsByClassName('circle'),
-	heart = document.guerySelectorAll('.heart'),
-	oneHeart = document.guerySelector('.heart');
+	heart = document.querySelectorAll('.heart'),
+	oneHeart = document.querySelector('.heart');
 
 console.log(box); // вывод с id="box"
 console.log(btn); // вывод с tagName=button (это псевдомассив)

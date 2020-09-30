@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 let startBtn = document.getElementById("start"),
 	budgetValue = document.getElementsByClassName('budget-value')[0],
