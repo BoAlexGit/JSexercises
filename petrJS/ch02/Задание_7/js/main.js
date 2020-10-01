@@ -1,3 +1,4 @@
+// main.js
 //'use strict';
 
 let startBtn = document.getElementById("start"),

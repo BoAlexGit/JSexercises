@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cf4e1d1-4d38-4cc6-8f9d-d77338491268" name="Default Changelist" comment="" />
+    <list default="true" id="b47da2ad-1d94-4e49-b400-0c9fea211dfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../2_16 Получение элементов со страницы/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_16 Получение элементов со страницы/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" path="/snap/go/6274" />
+  <component name="GOROOT" path="/snap/go/current" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1iB1diNeV2i4GAGmp5QJQuemoHv" />
+  <component name="ProjectId" id="1iGxTpuZfrABNtycfAmbMMaqhvy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
