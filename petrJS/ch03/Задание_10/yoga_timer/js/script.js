@@ -1,42 +1,29 @@
-//script.js
-// нельзя с точностью сказать сколько времени будут загружаться элементы страницы
-// ведь обычно это и ссs стили и ресурсы подгружаемые с других ссерверов
-// и главное картинки если разроботчик или контакт менеджер не добрасовестный он 
-// забыл жжать их и они могу достигать  5-10 мБ и пока наша страница будет загружаться
-// наш js уже начнёт что-то изменять на этой странице - и есл дом дерева не подгрузилась 
-// мы к сожалению получим ошибку
-// чтобы js не начал обрабатывать раньше времени есть два события: 
-// window.addEventListener('load', function() { - загрузится всё вместе со всеми картинками
-// но нам главное чтобы было построено DOM-дерево,
-// поэтому лучше  второй вариант:
+// script.js
+// работа таймера обычно очень плохо описана, а часто нужно сделать
+// что-нибудь особенное
 window.addEventListener('DOMContentLoaded', function() {
-// требуется чтобы показывался только один блок а остальные показывались только после 
-// переключения между табами Лечение -> Отдых -> Природа -> Йога 
-    'use strict';// строгий режим
-    // прописываем переменные с которыми будем работать - всегда так начинаем
+    'use strict';
     let tab = document.querySelectorAll('.info-header-tab'),
         info = document.querySelector('.info-header'),
         tabContent = document.querySelectorAll('.info-tabcontent');
-// подумать какие фуркции нам нужно реализовать
-    function hideTabContent(a) {//функция скрывает весь tabContent
-        for (let i = a; i < tabContent.length; i++) {//цикл подстраевается и перебирает все элементы
-            //этими двумя строчками мы возьмем все элементы tabContent и полностью
-            //скроим их со страницы (см.эти классы в .css)
+
+    function hideTabContent(a) {
+        for (let i = a; i < tabContent.length; i++) {
             tabContent[i].classList.remove('show');
             tabContent[i].classList.add('hide');
         }
     }
 
-    hideTabContent(1);// запустить функцию и оставить часть "1" т.к. она пропускается
+    hideTabContent(1);
 
-    function showTabContent(b) {//функция показывает нужный tabContent
+    function showTabContent(b) {
         if (tabContent[b].classList.contains('hide')) {
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('show');
         }
     }
 
-    info.addEventListener('click', function(event) {//обработчик нажатия
+    info.addEventListener('click', function(event) {
         let target = event.target;
         if (target && target.classList.contains('info-header-tab')) {
             for(let i = 0; i < tab.length; i++) {
@@ -49,4 +36,64 @@ window.addEventListener('DOMContentLoaded', function() {
         }
 
     });
+
+    // Timer как он работает
+
+    let deadline = '2020-11-28';// время окончания акции
+// функция вычисляющая статически от deadline до настоящей даты и 
+// вычленяет оттуда часы : минуты : секунды
+    function getTimeRemaining(endtime) {
+        // вычислим разницу между deadline и настоящей датой
+        let t = Date.parse(endtime) - Date.parse(new Date()),
+        // т.к. всё получается в миллисекундах делаем нормально
+        seconds = Math.floor((t/1000) % 60),
+        minutes = Math.floor((t/1000/60) % 60),
+        //hours = Math.floor((t/(1000*60*60)));//если заканчивается на часах
+        // заканчивается на днях то:
+         hours =  Math.floor((t/1000/60/60) % 24),
+         days = Math.floor((t/(1000*60*60*24))); //количество дней осталось
+
+        return { // возвращаем целый объект - пары ключ-значение
+            'total' : t,
+            'days' : days,
+            'hours' : hours,
+            'minutes' : minutes,
+            'seconds' : seconds
+        };
+    }
+// функция превращает нашу статичную вёрстку уже в динамическую для того
+// чтобы подставлять все эти значения которые мы расчитываем прямо в вёрстку
+    function setClock(id, endtime) {
+        let timer = document.getElementById(id),
+            days = timer.querySelector('.days'),
+            hours = timer.querySelector('.hours'),
+            minutes = timer.querySelector('.minutes'),
+            seconds = timer.querySelector('.seconds'),
+            timeInterval = setInterval(updateClock, 1000);
+            
+        function updateClock() {
+            let t = getTimeRemaining(endtime);
+
+            function addZero(num){
+                        if(num <= 9) {
+                            return '0' + num;
+                        } else return num;
+                    }
+            days.textContent = addZero (t.days);
+            hours.textContent = addZero(t.hours);
+            minutes.textContent = addZero(t.minutes);
+            seconds.textContent = addZero(t.seconds);
+
+            if (t.total <= 0) {
+                clearInterval(timeInterval);
+                days.textContent = '00';
+                hours.textContent = '00';
+                minutes.textContent = '00';
+                seconds.textContent = '00';
+            }
+        }
+
+    }
+
+    setClock('timer', deadline);
 });

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9facf419-5bc2-4f5a-8623-4e91073061da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../ch02/Задание_5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ch02/Задание_5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,5 +34,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="374" y="233" width="424" height="484" key="FileChooserDialogImpl" timestamp="1603721153324">
+      <screen x="67" y="27" width="1853" height="930" />
+    </state>
+    <state x="374" y="233" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.930@67.27.1853.930" timestamp="1603721153324" />
   </component>
 </project>
