@@ -7,13 +7,33 @@ function sayHello() {
 // необходимо применять рекурсивный вызов чем просто setInterval
 let timerId2 = setTimeout(function log() {
     console.log("Самоповтор рекурсивной функции");
+    console.log(xbox),
+    console.log(ybox),
+    console.log(width),
+    console.log(height);
     setTimeout(log, 2000);
 });
 
 // создадим простую анимацию с перемещением квадратика 14:57
 let btn = document.querySelector('.btn'),
 elem = document.querySelector('.box');
-
+// чтобы посмотреть размеры нашего box
+let width = elem.clientWidth,
+    height = elem.clientHeight,
+    xbox = elem.getBoundingClientRect().top,
+    ybox = elem.getBoundingClientRect().y;
+    console.log(width);
+    console.log(height);
+    console.log(elem.getBoundingClientRect().bottom);
+    console.log(elem.getBoundingClientRect());
+    console.log(btn.getBoundingClientRect().top);
+// чтобы посмотреть размеры нашей страницы
+    console.log(document.documentElement.clientWidth);
+    console.log(document.documentElement.offsetHeight);
+    // можно эти методы использовать на любой странице в консоли
+console.log(document.documentElement.scrollTop);
+scrollBy(0,100); //переместится на 100пикселей
+scrollTo(0, 200);// переместится в координаты 0, 200
 function myAnimation(){
     let pos =0;
     let id = setInterval(frame, 10);

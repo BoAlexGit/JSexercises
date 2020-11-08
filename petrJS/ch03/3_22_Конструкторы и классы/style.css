@@ -1,11 +1,11 @@
-/* 19.7 style.css */
+/* style.css */
 .textMy
 {
   background-color: rgb(255, 0, 200); 
 }
 .box {
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 100px;
   background-color: blue;
 }
