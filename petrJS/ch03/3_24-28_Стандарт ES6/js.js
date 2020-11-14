@@ -252,7 +252,53 @@ var elements = [
 	};
 	obj.sayNumber();
 	// то контекстом вызова будет js.js:248 {number: 5, sayNumber: ƒ} т.е. сам объект(2ой вариант см.про this)
-	// т.е. поскольку у стрелочной функции нет котекста вызова она берёт его у своего родителя (obj.)
-
+	// т.е. поскольку у стрелочной функции нет котекста вызова она берёт его у своего родителя (obj.) поэтому
 	// стр-функции удобно использовать в событиях
-	
+
+    // Обработчики событий
+    // стрелочные функции удобно использовать в событиях
+	let btn = document.querySelector('button');
+
+	btn.addEventListener('click', function () {
+		let show = () => {
+			console.log(this);
+		};
+		show();
+	});
+
+// Отсутствие связывания с this
+function Person() {
+	// В конструкторе Person() `this` указывает на себя.
+	this.age = 1;
+
+	setInterval(function growUp() {
+		// В нестрогом режиме, в функции growUp() `this` указывает
+		// на глобальный объект, который отличается от `this`,
+		// определяемом в конструкторе Person().
+				this.age++;
+				},
+		50);
+	console.log(this);
+	//console.log(setInterval(5, 1000)); // не работает
+}
+
+var p = new Person();
+console.log(p);
+console.log(p);
+console.log(p);
+console.log(p);
+console.log(this);
+
+//В ECMAScript 3/5, данная проблема решалась присваиванием значения  this  переменной:
+function Person1() {
+	var that = this;
+	that.age = 0;
+
+	setInterval(function growUp() {
+		// Функция с обратным вызовом(callback) содержит переменную that, которая
+		// ссылается на требуемый объект this.
+		that.age++;
+	}, 100);
+};
+var p1 = new Person1();
+console.log(p1);
