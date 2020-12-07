@@ -33,13 +33,13 @@ console.log(Person(name));
     };
 };
 
-var Person1 = (function() {
+var Peron = (function() {
     // Приватная функция
-    let log = function(message) {
+    var log = function(message) {
         console.log(message);
     };
 
-    let Person2 = function(name) {
+    var Person = function(name) {
         // Публичное свойство
         this.name = name;
     };
@@ -50,8 +50,13 @@ var Person1 = (function() {
     };
 
     // Экспорт публичной функции
+    return Person;
+})();
+
+    // Экспорт публичной функции
     return Person1, Person2;
 })();
+<<<<<<< HEAD
  /*************** Наследование *****************/
  // функция конструктор
 var PersonNasl = function(name) {
@@ -80,11 +85,47 @@ GreatPersonNasl.prototype.sayPhrase = function() {
 // создание нового объекта
 var john = new PersonNasl('John');
 var jane = new GreatPersonNasl('Jane', 'Hello, inheritance!');
+=======
+
+/***************************************************/
+//Наследование
+// функция конструктор
+var Person = function(name) {
+    this.name = name + ' Doe';
+};
+
+// запись метода в прототип
+Person.prototype.sayName = function() {
+    console.log(this.name);
+};
+
+// Вызов конструктора родителя внутри дочернего
+// конструктора для записи всех свойств
+var GreatPerson = function(name, phrase) {
+    Person.apply(this, arguments);
+    this.phrase = phrase;
+};
+
+// Перезапить прототипа дочернего конструктора
+GreatPerson.prototype = Object.create(Person.prototype);
+
+GreatPerson.prototype.sayPhrase = function() {
+    console.log(this.name + ' says: "' + this.phrase + '"');
+};
+
+// создание нового объекта
+var john = new Person('John');
+var jane = new GreatPerson('Jane', 'Hello, World!');
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
 
 john.sayName(); // John Doe
 jane.sayName(); // Jane Doe
 jane.sayPhrase(); // Jane Doe says: "Hello, World!"
 
+<<<<<<< HEAD
+=======
+// сказка про попугаев
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
 // Дед попугай с двумя лапами
 var ParrotGrandfather = function() {};
 ParrotGrandfather.prototype = {
@@ -129,19 +170,34 @@ ParrotGrandfather.prototype.species = 'seagull';
 console.log(grandfather.species, father.species, son.species);
 // seagull eagle eagle - дед чайка, отец и сын орлы
 
+<<<<<<< HEAD
 // Примитивы
 // Наш собственный конструктор
 var PersonPrim = function(name) {
+=======
+/*******************************************************/
+// Полиморфизм
+// Наш собственный конструктор
+var Person = function(name) {
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
     this.name = name;
 };
 
 // Переназначение метода toString для всех объектов,
 // созданных с помощью данного конструктора
+<<<<<<< HEAD
 PersonPrim.prototype.toString = function() {
     return 'PersonPrim ' + this.name;
 };
 
 var john = new PersonPrim('John');
+=======
+Person.prototype.toString = function() {
+    return 'Person ' + this.name;
+};
+
+var john = new Person('John');
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
 
 // Два массива, второй абсолютно обычный,
 // для первого переназначен метод toString
@@ -156,4 +212,181 @@ arr1.toString = function() {
 // В итоге
 console.log(john.toString()); // Person John
 console.log(arr1.toString()); // Array 42
+<<<<<<< HEAD
 console.log(arr2.toString()); // 5,3
+=======
+console.log(arr2.toString()); // 5,3
+
+/**************************************************/
+// классы
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+
+    sayName() {
+        console.log(`Person ${this.name} said his name`);
+    }
+}
+
+const john = new Person('John');
+john.sayName(); // Person John said his name
+Пример выше можно записать в стиле ES5 следующим образом:
+
+    var Person = function(name) {
+        this.name = name;
+    };
+
+Person.prototype.sayName = function() {
+    console.log('Person ' + this.name + ' said his name');
+};
+
+var john = new Person('John');
+john.sayName(); // Person John said his name
+
+//extends
+//ES6 классы также обладают синтаксическим сахаром для реализации прототипного наследования.
+//Для подобных целей используется extends:
+class GreatPerson extends Person {
+    constructor(name, phrase) {
+        super(name);
+        this.phrase = phrase;
+    }
+    sayPhrase() {
+        console.log(`${this.name} says: "${this.phrase}"`)
+    }
+}
+
+const jane = new Person('Jane', 'Hello, World!');
+jane.sayName(); // Person Jane said his name
+jane.sayPhrase(); // Jane says: "Hello, World!"
+
+const jane = new Person('Jane', 'Hello, World!');
+jane.sayName(); // Person Jane said his name
+jane.sayPhrase(); // Jane says: "Hello, World!"
+
+/* Объявление класса
+Первый способ определения класса — class declaration (объявление класса).
+ Для этого необходимо воспользоваться ключевым словом class и указать имя класса
+ (в примере — «Rectangle»).*/
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+}
+// безымянный
+var Rectangle = class {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+};
+console.log(Rectangle.name);
+// отобразится: "Rectangle"
+
+// именованный
+var Rectangle = class Rectangle2 {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+};
+console.log(Rectangle.name);
+// отобразится: "Rectangle2"
+//Обратите внимание: выражения класса подвержены тем же проблемам с подъёмом (hoisting),
+// что и объявления класса.
+// ключевое слово super
+class Cat {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log(`${this.name} издает звук.`);
+    }
+}
+
+class Lion extends Cat {
+    speak() {
+        super.speak();
+        console.log(`${this.name} рычит.`);
+    }
+}
+
+let l = new Lion('Фаззи');
+l.speak();
+// Фаззи издает звук.
+// Фаззи рычит.
+
+
+//mix-ins
+var calculatorMixin = Base => class extends Base {
+    calc() { }
+};
+
+var randomizerMixin = Base => class extends Base {
+    randomize() { }
+};
+// Класс, использующий такие mix-ins, можно описать следующим образом:
+    class Foo { }
+class Bar extends calculatorMixin(randomizerMixin(Foo)) { }
+
+// species
+class MyArray extends Array {
+    // Изменить species на родительский конструктор Array
+    static get [Symbol.species]() { return Array; }
+}
+var a = new MyArray(1,2,3);
+var mapped = a.map(x => x * x);
+
+console.log(mapped instanceof MyArray); // false
+console.log(mapped instanceof Array);   // true
+
+//static
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    static displayName = "Точка";
+    static distance(a, b) {
+        const dx = a.x - b.x;
+        const dy = a.y - b.y;
+
+        return Math.hypot(dx, dy);
+    }
+}
+
+const p1 = new Point(5, 5);
+const p2 = new Point(10, 10);
+p1.displayName; //undefined
+p1.distance;    //undefined
+p2.displayName; //undefined
+p2.distance;    //undefined
+
+console.log(Point.displayName);      // "Точка"
+console.log(Point.distance(p1, p2)); // 7.0710678118654755
+
+// методы
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+
+    get area() {
+        return this.calcArea();
+    }
+
+    calcArea() {
+        return this.height * this.width;
+    }
+}
+
+const square = new Rectangle(10, 10);
+
+console.log(square.area); // 100
+
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
