@@ -56,6 +56,36 @@ var Peron = (function() {
     // Экспорт публичной функции
     return Person1, Person2;
 })();
+<<<<<<< HEAD
+ /*************** Наследование *****************/
+ // функция конструктор
+var PersonNasl = function(name) {
+    this.name = name + ' Doe';
+}
+
+// запись метода в прототип
+PersonNasl.prototype.sayName = function() {
+    console.log(this.name);
+}
+
+// Вызов конструктора родителя внутри дочернего
+// конструктора для записи всех свойств
+var GreatPersonNasl = function(name, phrase) {
+    PersonNasl.apply(this, arguments);
+    this.phrase = phrase;
+}
+
+// Перезапить прототипа дочернего конструктора
+GreatPersonNasl.prototype = Object.create(PersonNasl.prototype);
+
+GreatPersonNasl.prototype.sayPhrase = function() {
+    console.log(this.name + ' says: "' + this.phrase + '"');
+}
+
+// создание нового объекта
+var john = new PersonNasl('John');
+var jane = new GreatPersonNasl('Jane', 'Hello, inheritance!');
+=======
 
 /***************************************************/
 //Наследование
@@ -86,12 +116,16 @@ GreatPerson.prototype.sayPhrase = function() {
 // создание нового объекта
 var john = new Person('John');
 var jane = new GreatPerson('Jane', 'Hello, World!');
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
 
 john.sayName(); // John Doe
 jane.sayName(); // Jane Doe
 jane.sayPhrase(); // Jane Doe says: "Hello, World!"
 
+<<<<<<< HEAD
+=======
 // сказка про попугаев
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
 // Дед попугай с двумя лапами
 var ParrotGrandfather = function() {};
 ParrotGrandfather.prototype = {
@@ -136,20 +170,34 @@ ParrotGrandfather.prototype.species = 'seagull';
 console.log(grandfather.species, father.species, son.species);
 // seagull eagle eagle - дед чайка, отец и сын орлы
 
+<<<<<<< HEAD
+// Примитивы
+// Наш собственный конструктор
+var PersonPrim = function(name) {
+=======
 /*******************************************************/
 // Полиморфизм
 // Наш собственный конструктор
 var Person = function(name) {
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
     this.name = name;
 };
 
 // Переназначение метода toString для всех объектов,
 // созданных с помощью данного конструктора
+<<<<<<< HEAD
+PersonPrim.prototype.toString = function() {
+    return 'PersonPrim ' + this.name;
+};
+
+var john = new PersonPrim('John');
+=======
 Person.prototype.toString = function() {
     return 'Person ' + this.name;
 };
 
 var john = new Person('John');
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
 
 // Два массива, второй абсолютно обычный,
 // для первого переназначен метод toString
@@ -164,6 +212,9 @@ arr1.toString = function() {
 // В итоге
 console.log(john.toString()); // Person John
 console.log(arr1.toString()); // Array 42
+<<<<<<< HEAD
+console.log(arr2.toString()); // 5,3
+=======
 console.log(arr2.toString()); // 5,3
 
 /**************************************************/
@@ -338,3 +389,4 @@ const square = new Rectangle(10, 10);
 
 console.log(square.area); // 100
 
+>>>>>>> 786e9bf8c08ec9aa46b75576f8ab82715a6362b6
