@@ -102,6 +102,9 @@ window.addEventListener('DOMContentLoaded', function() {
         more.classList.remove('more-splash');
         document.body.style.overflow = '';
     });
+
+    // Form -> из файла /home/alex/jsGit/petrJS/ch04/31_Задание 13_ Реализация скрипта отправки данных из формы/js/script.js
+
 // будем реализовывать отправку на сервер данных которые юзер набрал (номер телефона итп)
          // чтобы работать с Form "Форма обратной связи"
 // здесь будут различные сообщения по состоянию объекта
@@ -120,7 +123,7 @@ window.addEventListener('DOMContentLoaded', function() {
 // на эту форму(не на кнопку!) вешаем обработчик события submit означает, что события
 // события происходит только тогда когда наша форма отправляется
     form.addEventListener('submit', function(event) {
-        event.preventDefault();//отменить стандартное поведение браузера
+        event.preventDefault();//отменить стандартное поведение браузера (без обновления всей страницы)
         form.appendChild(statusMessage);//поместить сообщение в нашу форму
 //создание запроса (чтобы мы могли отправить данные на серевер)
         let request = new XMLHttpRequest();
@@ -130,7 +133,7 @@ window.addEventListener('DOMContentLoaded', function() {
         //request.setRequestHeader('Content-type', 'application/json; charset=utf-8');//если запрос в json
         request.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 // теперь нам нужно получить те данные которые ввёл юзер
-        let formData = new FormData(form);
+        let formData = new FormData(form);// второй вариант с json(он серенький)
 // перевести в json (если запрос в json)
        // let obj = {};
        // formData.forEach(function(value, key) {
@@ -149,11 +152,13 @@ window.addEventListener('DOMContentLoaded', function() {
                 statusMessage.innerHTML = message.failure;
             }
         });
+        // в файле index.html <input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
+        // чтобы правильно отправлять данные необходимо обязательно установить параметр name=
 // очистить инпуты от юзеровских записей после сабмита
         for (let i = 0; i < input.length; i++) {
             input[i].value = '';
         }
     });
 
-
+    
 });
