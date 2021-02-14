@@ -151,14 +151,14 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     // Slider
-
+// открываем index.html и "вынимаем" со страницы переменные нужные для слайдера
     let slideIndex = 1,
         slides = document.querySelectorAll('.slider-item'),
         prev = document.querySelector('.prev'),
         next = document.querySelector('.next'),
         dotsWrap = document.querySelector('.slider-dots'),
         dots = document.querySelectorAll('.dot');
-
+//
     showSlides(slideIndex);
 
     function showSlides(n) {
