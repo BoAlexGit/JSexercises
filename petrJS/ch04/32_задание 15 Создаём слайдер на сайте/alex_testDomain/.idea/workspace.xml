@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca50fc7c-208f-4523-a1f6-a45607891a64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +30,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,5 +48,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="485" y="127" width="1022" height="737" key="SettingsEditor" timestamp="1613388406062">
+      <screen x="72" y="27" width="1848" height="930" />
+    </state>
+    <state x="485" y="127" width="1022" height="737" key="SettingsEditor/72.27.1848.930@72.27.1848.930" timestamp="1613388406062" />
+    <state x="993" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1613388016116">
+      <screen x="72" y="27" width="1848" height="930" />
+    </state>
+    <state x="993" y="239" width="672" height="678" key="search.everywhere.popup/72.27.1848.930@72.27.1848.930" timestamp="1613388016116" />
   </component>
 </project>

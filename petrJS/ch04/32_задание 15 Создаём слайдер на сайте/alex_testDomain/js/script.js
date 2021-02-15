@@ -1,3 +1,4 @@
+//   js/script.js
 window.addEventListener('DOMContentLoaded', function() {
 
     'use strict';
@@ -150,7 +151,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Slider
+//Slider открываем index.html и “вынимаем” со страницы переменные нужные для слайдера
+
 // открываем index.html и "вынимаем" со страницы переменные нужные для слайдера
     let slideIndex = 1,
         slides = document.querySelectorAll('.slider-item'),
@@ -158,7 +160,7 @@ window.addEventListener('DOMContentLoaded', function() {
         next = document.querySelector('.next'),
         dotsWrap = document.querySelector('.slider-dots'),
         dots = document.querySelectorAll('.dot');
-//
+// Функция которая перебирает слайды по номеру n
     showSlides(slideIndex);
 
     function showSlides(n) {
@@ -171,6 +173,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
 
         slides.forEach((item) => item.style.display = 'none');
+        // более старая запись
         // for (let i = 0; i < slides.length; i++) {
         //     slides[i].style.display = 'none';
         // }
