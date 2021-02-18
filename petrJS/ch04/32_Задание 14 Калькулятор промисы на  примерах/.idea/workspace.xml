@@ -2,6 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71c24cf9-e02a-4d2b-9059-beb037fe070d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/32_Задание 14 Калькулятор промисы на  примерах.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/__MACOSX/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/__MACOSX/js/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/__MACOSX/js/._current.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/__MACOSX/js/._script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/css/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/icons/left-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/icons/right-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/letter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/main_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/massage.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/modal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/ourGerb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/slider_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/slider_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/slider_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/slider_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/sunrise.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/sunset.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/img/yoga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/js/current.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/logo/facebook-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/logo/instagram-social-network-logo-of-photo-camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/logo/pinterest-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/logo/twitter-logo-silhouette.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alex_testDomain/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../32_Задание 16 Создаем калькулятор на сайте/alex_testDomain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../32_Задание 16 Создаем калькулятор на сайте/alex_testDomain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../32_Задание 16 Создаем калькулятор на сайте/alex_testDomain/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../32_Задание 16 Создаем калькулятор на сайте/alex_testDomain/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../32_задание 15 Создаём слайдер на сайте/alex_testDomain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../32_задание 15 Создаём слайдер на сайте/alex_testDomain/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../32_задание 15 Создаём слайдер на сайте/alex_testDomain/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../32_задание 15 Создаём слайдер на сайте/alex_testDomain/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

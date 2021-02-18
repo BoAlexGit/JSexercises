@@ -151,28 +151,27 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-//Slider открываем index.html и “вынимаем” со страницы переменные нужные для слайдера
-
+//Slider
 // открываем index.html и "вынимаем" со страницы переменные нужные для слайдера
-    let slideIndex = 1,
+    let slideIndex = 1, //параметр текущего слайда
         slides = document.querySelectorAll('.slider-item'),
-        prev = document.querySelector('.prev'),
+        prev = document.querySelector('.prev'),// стрелочки для перебора слайдов
         next = document.querySelector('.next'),
         dotsWrap = document.querySelector('.slider-dots'),
-        dots = document.querySelectorAll('.dot');
-// Функция которая перебирает слайды по номеру n
+        dots = document.querySelectorAll('.dot'); // точки для выбора слайда
+// Функция которая перебирает слайды по номеру n, показывая только его
     showSlides(slideIndex);
 
     function showSlides(n) {
 
         if (n > slides.length) {
-            slideIndex = 1;
+            slideIndex = 1;  //если слайды закончились перейти к n=1
         }
         if (n < 1) {
-            slideIndex = slides.length;
+            slideIndex = slides.length;// если слайды "крутить" назад то перейти к n=количество слайдов
         }
 
-        slides.forEach((item) => item.style.display = 'none');
+        slides.forEach((item) => item.style.display = 'none');//стрелочная функция
         // более старая запись
         // for (let i = 0; i < slides.length; i++) {
         //     slides[i].style.display = 'none';
@@ -182,14 +181,14 @@ window.addEventListener('DOMContentLoaded', function() {
         slides[slideIndex - 1].style.display = 'block';
         dots[slideIndex - 1].classList.add('dot-active');
     }
-
+// функции для увеличения старого n или назначение нового
     function plusSlides(n) {
         showSlides(slideIndex += n); 
     }
     function currentSlide(n) {
         showSlides(slideIndex = n);
     }
-
+// ставим обработчики событий на стрелочки prev и next
     prev.addEventListener('click', function() {
         plusSlides(-1);
     });
@@ -197,7 +196,7 @@ window.addEventListener('DOMContentLoaded', function() {
     next.addEventListener('click', function() {
         plusSlides(1);
     });
-
+// точки для выбора слайда
     dotsWrap.addEventListener('click', function(event) {
         for (let i = 0; i < dots.length + 1; i++) {
             if (event.target.classList.contains('dot') && event.target == dots[i-1]) {
