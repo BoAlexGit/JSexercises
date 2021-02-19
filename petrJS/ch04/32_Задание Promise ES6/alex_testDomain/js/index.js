@@ -54,3 +54,32 @@ if ("Promise" in window) {
     log = document.getElementById('log');
     log.innerHTML = "Демонстрация невозможна, поскольку ваш браузер не поддерживает интерфейс <code>Promise<code>.";
 }
+
+// Пример г. Ptr "Выстрел"
+function  shoot(arrow, headshot, fail) {
+    console.log('Вы сделали выстрел...');
+
+    setTimeout(function () {
+       Math.random() > .5 ? headshot({}) : fail("Вы промахнулись");
+    }, 3000)
+};
+
+function win() {
+    console.log('Вы победили!')
+}
+
+function loose() {
+    
+}
+
+shoot({},
+     function (mark) {
+         console.log('Вы попали в цель!')
+      },
+     function (miss) {
+         console.error(miss);
+      }
+    )
+
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", shoot);
