@@ -1,3 +1,4 @@
+// Код простого конвертора находится в файле script.js
 // Изучение промисов:
 // Простой пример
 let myFirstPromise = new Promise((resolve, reject) => {
@@ -55,7 +56,11 @@ if ("Promise" in window) {
     log.innerHTML = "Демонстрация невозможна, поскольку ваш браузер не поддерживает интерфейс <code>Promise<code>.";
 }
 
-// Пример г. Ptr "Выстрел"
+
+/**********************************************************************************************/
+// Пример г. Ptr "Выстрел" - если применять функции CallBack (получается сложно)
+/* let drink = 0;//let drink = 1; //переменная показывающая пьём/непьём
+
 function  shoot(arrow, headshot, fail) {
     console.log('Вы сделали выстрел...');
 
@@ -65,21 +70,70 @@ function  shoot(arrow, headshot, fail) {
 };
 
 function win() {
-    console.log('Вы победили!')
+    console.log('Вы победили!');
+    (drink === 1) ? buyBeer() : giveMoney();
+}
+
+function buyBeer() {
+    console.log('Вам купили пиво')
+}
+
+function giveMoney() {
+    console.log('Вам заплатили! :)')
 }
 
 function loose() {
-    
+    console.log('Вы проиграли :(')
 }
-
+let mark = 10; // Количество очков
 shoot({},
      function (mark) {
-         console.log('Вы попали в цель!')
+         console.log('Вы попали в цель!');
+         win(mark, buyBeer,giveMoney);// чёткая последовательность действий
       },
      function (miss) {
          console.error(miss);
+         loose();
       }
     )
 
     let btn1 = document.getElementById("btn1");
     btn1.addEventListener("click", shoot);
+
+ */
+// Перепишем наш "Выстрел" используя промисы
+let drink = 0;//let drink = 1; //переменная показывающая пьём/непьём
+
+function  shoot(arrow) {
+    console.log('Вы сделали выстрел...');
+
+    let promise = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            Math.random() > .5 ? resolve({}) : reject("Вы промахнулись");
+        }, 3000);
+    });
+    return promise;
+};
+
+function win() {
+    console.log('Вы победили!');
+    (drink === 1) ? buyBeer() : giveMoney();
+}
+
+function buyBeer() {
+    console.log('Вам купили пиво')
+}
+
+function giveMoney() {
+    console.log('Вам заплатили! :)')
+}
+
+function loose() {
+    console.log('Вы проиграли :(')
+}
+//let mark = 10; // Количество очков
+shoot({}).then(mark => console.log('Вы попали в цель!'))
+    .then(win)
+    .catch(loose)
+let btn1 = document.getElementById("btn1");//кнопка нормально не работает
+btn1.addEventListener("click", shoot);
