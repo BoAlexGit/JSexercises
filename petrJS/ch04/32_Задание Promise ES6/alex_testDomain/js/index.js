@@ -137,3 +137,17 @@ shoot({}).then(mark => console.log('Вы попали в цель!'))
     .catch(loose)
 let btn1 = document.getElementById("btn1");//кнопка нормально не работает
 btn1.addEventListener("click", shoot);
+
+/******************** Работа с localStorage ****************************************************/
+//window.localStorage.clear(); всё очистить
+window.localStorage.setItem('myKey', 'myValue');
+window.sessionStorage.setItem('mySessionKey' , 'mySession')
+
+let localValue = localStorage.getItem('myKey');
+console.log(localValue); //"myValue"
+
+let sessionValue = sessionStorage.getItem('mySessionKey');
+console.log(sessionValue); //"mySession"
+
+localStorage.removeItem("myKey");
+
