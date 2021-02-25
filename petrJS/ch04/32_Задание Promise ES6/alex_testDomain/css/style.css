@@ -1,3 +1,7 @@
+/* my experiments by css */
+input[type=email]:valid { background: green }
+input[type=email]:invalid { background: red }
+
 /*style.css*/
 .fade {
   -webkit-animation-name: fade;

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!
+<!--DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,11 +47,123 @@
                 Мы с вами свяжемся
             </div>
 
+            <div><textarea cols="40" rows="10">Please type your message here.</textarea>
+            </div>
+
         </div>
     </div>
 
+    <div><fieldset>
+            <legend accesskey=p>
+                <label>I want <input name=pizza type=number step=1 value=1 min=0>
+                    pizza(s) with these toppings</label>
+            </legend>
+            <label><input name=pizza-cheese type=checkbox checked> Cheese</label>
+            <label><input name=pizza-ham type=checkbox checked> Ham</label>
+            <label><input name=pizza-pineapple type=checkbox> Pineapple</label>
+        </fieldset></div>
+    <div><input type="tel" name="telephone_number">
+        <input type="url" name="web_address">
+        <input type="email" name="email_address">
+
+    </div>
+    <div>
+        <style scoped>
+            /* Here be CSS applied exclusively to this element's parent */
+            input[type=email]:valid { background: green }
+            input[type=email]:invalid { background: red }
+        </style>
+        <p>So this element, and everything in its parent div, will get special treatment.</p>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
+
+<--! Поворачивающийся квадрат
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS Transforms and Transitions</title>
+
+    <style>
+        #box {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: transform 2s;
+            -webkit-transition: -webkit-transform 2s;
+            -moz-transition: -moz-transform 2s;
+            -o-transition: -o-transform 2s;
+            /* no IE support for transition until possibly IE 10 */
+        }
+        #box:hover {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg); /* Safari, Chrome, mobile Safari, and Android */
+            -moz-transform: rotate(45deg); /* Firefox */
+            -o-transform: rotate(45deg); /* Opera */
+            -ms-transform: rotate(45deg); /* IE 9 */
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+
+<div id="box">
+</div>
+</body>
+</html>
+
+/-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional
+        .dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;
+charset=utf-8" />
+    <title>Acme Virtual Industries: Preferred Customer Login</
+    title>
+    <script type="text/javascript" language="JavaScript">
+        function verify(loginform)
+        {if (loginform.login.value=='')
+        {alert('Enter your login name.'); return false;}
+            if (loginform.password.value=='')
+            {alert('Enter your password.'); return false;}
+            return true}
+    </script>
+</head>
+<body>
+<h1>Preferred Customer Login</h1>
+<p>Please log in to access the Preferred Customer options.</p>
+<form method="post" action="login.cgi"
+      onsubmit="return verify(this);">
+    <table border="0">
+        <tr>
+            <td>Login Name:</td>
+            <td colspan="2"><input type="text"
+                                   name="login" size="20"/></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password"
+                       size="10"/></td>
+            <td><input type="submit" value="Log In"/></td>
+        </tr>
+    </table>
+</form>
+<p>If you are not yet an Acme Virtual Services customer,
+    click <a href="new_cust.html">here</a>.</p>
+</body>
+</html>
+
