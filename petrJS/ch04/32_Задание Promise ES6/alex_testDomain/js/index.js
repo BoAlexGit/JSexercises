@@ -140,7 +140,7 @@ btn1.addEventListener("click", shoot);
 
 /******************** Работа с localStorage ****************************************************/
 //window.localStorage.clear(); всё очистить
-window.localStorage.setItem('myKey', 'myValue');
+/* window.localStorage.setItem('myKey', 'myValue');
 window.sessionStorage.setItem('mySessionKey' , 'mySession')
 
 let localValue = localStorage.getItem('myKey');
@@ -150,4 +150,28 @@ let sessionValue = sessionStorage.getItem('mySessionKey');
 console.log(sessionValue); //"mySession"
 
 localStorage.removeItem("myKey");
+localStorage.clear();
 
+
+window.addEventListener("DOMContententLoaded", function () {
+    let checkbox = document.getElementById('rememberMe'),
+        change = document.getElementById('change'),
+        form = document.getElementsByTagName("form")[0];
+    if (localStorage.getItem("isChecked") === "tru") {
+        checkbox.checked = true;
+    };
+
+    if (localStorage.getItem("bg") === "changed") {
+        form.style.backgroundColor = "#FF4766"
+    }
+
+    checkbox.addEventListener("click", function () {
+        localStorage.setItem("isChecked", true);
+    });
+
+    change.addEventListener('click', function () {
+        localStorage.setItem('bg', 'changed');
+    })
+})
+
+ */
