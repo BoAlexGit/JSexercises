@@ -1,0 +1,9 @@
+<МЕТА CHARSET=UTF-8>
+<МЕТА CHARSET="UTF-8" />
+<meta charset=utf-8>
+<meta charset="utf-8">
+<meta charset="utf-8" />
+
+<MeTa CHARset=utF-8>
+
+

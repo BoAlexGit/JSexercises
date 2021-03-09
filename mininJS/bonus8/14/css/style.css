@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	background-color: #e2e7ec;
+}
+
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+ul li {
+	width: 50px;
+	background-color: #fff;
+	padding: 15px 0;
+}
+
+.block {
+	margin: 30px auto;
+}
+
+.block p {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+.element-1 li:last-child {
+	background-color: red;
+}
+
+.element-1 li:nth-child(2) {
+	background-color: green;
+}
+
+.element-1 li:nth-child(3) {
+	background-color: blue;
+}
+
+.element-2 li:nth-child(even) {
+	background-color: red;
+}
+
+.element-2 li:nth-child(odd) {
+	background-color: blue;
+}
+
+.element-3 li:nth-child(2n + 1) {
+	background-color: yellow;
+}
+
+.element-3 li:nth-last-child(1) {
+	background-color: red;
+}
+
+.block-1 ul:first-child {
+	background-color: #000;
+}
+
+.block-1 ul:first-of-type {
+	background-color: #000;
+}
+
+.block-2 ul:last-child {
+	background-color: #000;
+}
+
+.block-2 ul:last-of-type {
+	background-color: #000;
+}
+
+.block-3 p:nth-child(2) {
+	color: red;
+}
+
+.block-3 p:nth-of-type(2) {
+	color: red;
+}
+
+.block-4 ul:only-of-type {
+	background-color: yellow;
+}
+
+.block-4 ul li:not(:nth-child(3)) {
+	background-color: green;
+}
+
+
+.block-4 p:empty {
+	border: 1px solid green;
+	height: 20px;
+}
+
+.block-4 p:target {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

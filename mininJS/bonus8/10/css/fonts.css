@@ -1,0 +1,5 @@
+@font-face {
+	font-family: 'bodoni';
+	src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+		 url('../fonts/bodoni-webfont.woff') format('woff');
+}
