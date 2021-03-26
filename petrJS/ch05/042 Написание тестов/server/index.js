@@ -1,6 +1,6 @@
 let express   = require( 'express' );
 var Faker     = require( 'Faker' );
-var _         = require( 'underscore' )
+var _         = require( 'underscore' );
 var app       = express( express.bodyParser() );
 var baseDir   = __dirname + '/../';
 
