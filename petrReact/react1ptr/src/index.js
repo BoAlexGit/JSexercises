@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {App, Clock} from './App';
+import Button from './Button.js';
 //import Clock from './App';
 //import reportWebVitals from './reportWebVitals';
 
@@ -10,7 +11,7 @@ class Myapp1 extends React.Component {
     return (
         <div className="wrapper">
             <Clock />
-
+            <Button />
         </div>
     );
   }

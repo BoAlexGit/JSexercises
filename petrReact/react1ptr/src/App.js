@@ -1,5 +1,5 @@
-import React from 'react';
-//import React, { Component } from 'react';
+import React, { Component } from 'react';
+//import React from 'react';
 //import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
@@ -24,9 +24,21 @@ function App() {
     </div>
   );
 }
-// подробное описание работы часов /home/alex/Desktop/VIDEO_Courses/JavaScript/[Udemy]
-// [Иван Петриченко] Полный курс по JavaScript + React - с нуля до результата
-//(2020)/05 Бонус. Дополнительные технологии/041 React 28:26
+// ********************* приложение физтренеровки ************
+function ShowBanner(props) {
+  if (props.time > 45){
+    return (
+        <div className="rest_block" >Всё отдыхаем!</div>
+    )
+  } else {
+    return (
+        <div className="work_block">Время чего-нибудь сотворить!</div>
+    )
+  }
+}
+
+
+// ******************** часы *********************************
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -51,6 +63,7 @@ class Clock extends React.Component {
   render() {
     return (
         <div >
+          <ShowBanner time={this.state.date.getSeconds()} />
           <h4>Текущее время {this.state.date.toLocaleTimeString()}</h4>
 
         </div>
@@ -62,3 +75,4 @@ class Clock extends React.Component {
 
 export {App, Clock} ;
 /*************************************************************************/
+
