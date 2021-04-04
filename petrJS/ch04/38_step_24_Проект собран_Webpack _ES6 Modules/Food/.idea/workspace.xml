@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58a3663e-bb6a-4d2e-90a6-468ddad9a948" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../38_step_23_Проект собран_Webpack _Common_js/Food/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../38_step_23_Проект собран_Webpack _Common_js/Food/.idea/Food.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../38_step_23_Проект собран_Webpack _Common_js/Food/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../38_step_23_Проект собран_Webpack _Common_js/Food/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Food.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/Group 5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/switch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/icons/veg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/form/spinner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/slider/food-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/slider/olive-oil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/slider/paprika.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/slider/pepper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/tabs/elite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/tabs/hamburger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/tabs/post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/img/tabs/vegy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/calc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/modules/timer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/js/services/services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../40_JS_step_25 - Готовая сборка проекта/Food/webpack.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///usr/lib/go-1.15" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1pkW5nr5lEITbD7CC47qiDGVNGK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
