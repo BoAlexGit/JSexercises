@@ -2,7 +2,7 @@ import React from 'react';
 
 import PostListItem from '../post-list-item';
 import './post-list.css'
-
+// см.056 Свойства и состояния компонентов. События в React _ Практика.mp4 => 14:00
 const PostList = ({posts}) => {
 
     const elements = posts.map( (item) => {
