@@ -116,7 +116,7 @@ export default class App extends Component {
     render() {
         const {data, term, filter} = this.state;
 // 059/15:40
-        const liked = data.filter((item) => item.like).length;
+        const liked = data.filter((item) => item.like).length;//фильтрует лайкнутые
         const allPosts = data.length;
         const visiblePosts = this.filterPost(this.searchPost(data, term), filter);
         return (
