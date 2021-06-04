@@ -1,3 +1,6 @@
+// react_step_8 - Жизненный цикл компонентов (см. 7.62-63)
+// Этот компонент будет обновляться когда мы будем кликать на одного из персонажей
+// video-course 063/18:00
 import React, {Component} from 'react';
 import './charDetails.css';
 import gotService from '../../services/gotService';
@@ -8,17 +11,20 @@ export default class CharDetails extends Component {
 
     gotService = new gotService();
 
-    state = {
+    state = { // состояние персонажа
         char: null,
         loading: true,
         error: false
     }
 
-    componentDidMount() {
+    componentDidMount() { // чтобы персонаж появился нужна функция
+        // video-course 063/19:00
         this.updateChar();
         
     }
-
+// всегда запускайте проверку с предыдущими пропсами
+// иначе может возникнуть бесконечный цикл (и будет утечка памяти)
+    // video-course 063/25:20
     componentDidUpdate(prevProps) {
         if (this.props.charId !== prevProps.charId) {
             this.updateChar();
@@ -32,7 +38,7 @@ export default class CharDetails extends Component {
         })
     }
 
-    updateChar() {
+    updateChar() {  // video-course 063/20:00
         const {charId} = this.props;
         if (!charId) {
             return;

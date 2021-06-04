@@ -9,8 +9,8 @@ import Spinner from '../spinner/';
 
 export default class ItemList extends Component {
 
-    gotService = new gotService();
-// В этом состоянии будет наш спис л
+    gotService = new gotService();// video-course 063/11:00
+// В этом состоянии будет наш список персонажей
     state = {
         charList: null,
         error: false
@@ -52,7 +52,7 @@ export default class ItemList extends Component {
         })
     }
 
-
+// video-course 063/12:10
     render() {
         const {charList, error} = this.state;
 

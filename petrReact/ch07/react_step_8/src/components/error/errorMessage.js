@@ -1,5 +1,6 @@
-// React_step_7 - кнопка переключения случайного персонажа (см. 7.61)
+// react_step_8 - Жизненный цикл компонентов (см. 7.62-63)
 // Обработка ошибок с сервера
+// video-course 063/33:00 - 35:00
 import React from 'react';
 import img from './error.jpg';
 //import './error.css';

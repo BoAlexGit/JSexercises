@@ -1,5 +1,8 @@
+// react_step_8 - Жизненный цикл компонентов (см. 7.62-63)
+// отдельный компонент вверху справа "Characters"
 import React, {Component} from 'react';
-import {Col, Row, Container} from 'reactstrap';
+//import {Col, Row, Container} from 'reactstrap';
+import {Col, Row} from 'reactstrap';
 import ItemList from '../itemList';
 import CharDetails from '../charDetails';
 import ErrorMessage from '../error';

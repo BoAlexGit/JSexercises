@@ -1,4 +1,4 @@
-// React_step_8 - Жизненный цикл компонентов (см. 7.62-63)
+// react_step_8 - Жизненный цикл компонентов (см. 7.62-63)
 import React, {Component} from 'react';
 import {Col, Row, Container} from 'reactstrap';
 import Header from '../header';
@@ -10,7 +10,7 @@ import './app.css';
 
 
 export default class App extends Component {
-    state = {
+    state = { // video-course 063/15:50
         showRandomChar: true,
         error: false
     }
@@ -23,6 +23,7 @@ export default class App extends Component {
     }
 
     render() {
+        // video-course 063/33:00
         if (this.state.error) {
             return <ErrorMessage/>
         }
@@ -40,7 +41,9 @@ export default class App extends Component {
                                 className="toggle-btn"
                                 onClick={this.toggleRandomChar}>Toggle random character</button>
                         </Col>
-                    </Row>
+                    </Row>{`$//много страниц с "Холисей"`}
+                    <CharacterPage/>
+                    <CharacterPage/>
                     <CharacterPage/>
                 </Container>
             </>
