@@ -19,10 +19,10 @@ export default class ItemList extends Component {
                 })
             })
     }
-
+// video-course 064/12:30
     renderItems(arr) {
         return arr.map((item) => {
-            const {id} = item;
+            const {id} = item;//объект который мы возвращаем на страницу
 
             const label = this.props.renderItem(item);
 

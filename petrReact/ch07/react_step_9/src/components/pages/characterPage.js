@@ -35,6 +35,9 @@ export default class CharacterPage extends Component {
             <ItemList 
                 onItemSelected={this.onItemSelected}
                 getData={this.gotService.getAllCharacters}
+// функция renderItem берёт объект (item === {name, gender} )  и возвращает => только то что нужно
+// video-course 064/13:21
+// рядом с именем будет пол персонажа в скобках
                 renderItem={({name, gender}) => `${name} (${gender})`}/>
         )
 
