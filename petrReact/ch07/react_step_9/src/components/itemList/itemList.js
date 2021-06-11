@@ -20,11 +20,16 @@ export default class ItemList extends Component {
                 })
             })
     }
-
+// video-course 064/12:30
     renderItems(arr) {
         return arr.map((item) => {
+<<<<<<< HEAD
             const {id} = item;
             /* video-course 064/13:30*/
+=======
+            const {id} = item;//объект который мы возвращаем на страницу
+
+>>>>>>> 2af8ad849d2bca7fbb169e1d3a2cd7730b564444
             const label = this.props.renderItem(item);
 
             return (
