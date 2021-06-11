@@ -1,3 +1,4 @@
+// pages/bookItem.js  react-step-9 (см. 7.64 Паттерны React)
 import React, {Component} from 'react';
 import gotService from '../../services/gotService';
 import ItemDetails, {Field} from '../itemDetails';

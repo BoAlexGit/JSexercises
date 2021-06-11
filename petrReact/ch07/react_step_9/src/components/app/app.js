@@ -13,7 +13,7 @@ import './app.css';
 
 export default class App extends Component {
     gotService = new gotService();
-// video-course 064/01:00
+    // video-course 064/01:00
     state = {
         showRandomChar: true,
         error: false,
@@ -58,6 +58,7 @@ export default class App extends Component {
                                 onClick={this.toggleRandomChar}>Toggle random character</button>
                             </Col>
                         </Row>
+                        {/* video-course 065/05:20 */}
                         <Route path='/' component={() => <h1>Welcome to GOT DB</h1>} exact/>
                         <Route path='/characters' component={CharacterPage} />
                         <Route path='/books' component={BooksPage} exact/>

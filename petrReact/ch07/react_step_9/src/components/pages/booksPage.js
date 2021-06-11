@@ -1,3 +1,4 @@
+// pages/bookPage.js  react-step-9 (см. 7.64 Паттерны React)
 import React, {Component} from 'react';
 import ItemList from '../itemList';
 import ErrorMessage from '../errorMessage';

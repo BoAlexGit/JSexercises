@@ -8,11 +8,12 @@ export default class ItemList extends Component {
     state = {
         itemList: null
     }
-
+// video-course 064/07:20 что происходит (повторение)
     componentDidMount() {
         const {getData} = this.props;
-// чтобы наш компонент был независим пишем itemList
-        getData()// video-course 064/03:41
+// чтобы наш компонент был независим мы charList поменяем на общее itemList
+// следовательно уберём привязку к отдельным параметрам персонажа
+       getData()// video-course 064/03:41
             .then( (itemList) => {
                 this.setState({
                     itemList
@@ -23,7 +24,7 @@ export default class ItemList extends Component {
     renderItems(arr) {
         return arr.map((item) => {
             const {id} = item;
-
+            /* video-course 064/13:30*/
             const label = this.props.renderItem(item);
 
             return (

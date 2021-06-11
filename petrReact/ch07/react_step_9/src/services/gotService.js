@@ -4,6 +4,7 @@
  и тогда наш контекст вызова будет точно закреплён за тем где мы его
  вызываем */
 // video-course 064/06:18
+
 export default class GotService {
     constructor() {
         this._apiBase = 'https://www.anapioficeandfire.com/api';

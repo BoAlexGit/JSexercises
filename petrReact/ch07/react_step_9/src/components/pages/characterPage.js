@@ -30,14 +30,15 @@ export default class CharacterPage extends Component {
         if (this.state.error) {
             return <ErrorMessage/>
         }
-
+        /* video-course 064/08:00  */
+        /* video-course 064/11:58  */
         const itemList = (
             <ItemList 
                 onItemSelected={this.onItemSelected}
                 getData={this.gotService.getAllCharacters}
                 renderItem={({name, gender}) => `${name} (${gender})`}/>
         )
-
+        /* video-course 064/29:00*/
         const itemDetails = (
             <ItemDetails
             itemId={this.state.selectedChar}
@@ -48,7 +49,7 @@ export default class CharacterPage extends Component {
                 <Field field='culture' label='Culture'/>
             </ItemDetails>
         )
-
+        /* video-course 064/21:00*/
         return (
            <RowBlock left={itemList} right={itemDetails} />
         )
