@@ -1,5 +1,5 @@
-// counter.js  react_step_11 (см. 8.71 Соединяем React и Redux)
-import React from 'react';
+// counter.js  react_step_11 (см. 8.71 Соединяем React и Redux ч.2 и 8.72 React Context)
+import React from 'react';// для работы с jsx и др.react
 import {connect} from 'react-redux';
 import * as actions from '../actions';
 
@@ -31,3 +31,4 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, actions)(Counter);
+/***********************************************************************/
